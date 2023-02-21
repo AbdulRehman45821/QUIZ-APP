@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyBB09n4prfHbqqnKWwp6CR2Jkw9H27d7Fo",
+    authDomain: "todo-app-by-abdulrehman-butt.firebaseapp.com",
+    projectId: "todo-app-by-abdulrehman-butt",
+    storageBucket: "todo-app-by-abdulrehman-butt.appspot.com",
+    messagingSenderId: "941067152445",
+    appId: "1:941067152445:web:79c4fb5336cb67e032ce54",
+    measurementId: "G-WXPMKPLDB1"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+    <h1><span class="styling">TODO</span>  List</h1>
+    <div class="input_div">
+       <div class="merge-bar">
+        <input id="todo-item" class="input" type="text" placeholder="What Do You Want To Do ...">
+        <button onclick="addTodo()" class="addButton" id="add-button"><i class="fa-solid fa-plus"></i></i></button>
+       </div>
+        <span class="class1"><button onclick="deleteAll()" class="adelButton">DELETE ALL</button></span>
+    </div>
+
+    <div class="unlist">
+        <ul id="list">
+
+        </ul>
+    </div>
+    <!-- <div class="container">
+         <div class="item">
+            <input type="text" class="item_input" disabled>
+            <button class="editButton">EDIT</button>
+            <button class="removeButton">Remove</button>
+        </div> -->
+    <!-- </div>  -->
+</body>
+<script src="app.js"></script>
+
+</html>

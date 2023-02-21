@@ -1,0 +1,168 @@
+@font-face {
+    font-family: rounded;
+    src: url(./Varela_Round/VarelaRound-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #111;
+    background-image: url(./images/background.jpg);
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 50;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    font-family: 'rounded', sans-serif;
+}
+
+.styling {
+    color: lime;
+    text-decoration: underline;
+}
+
+.input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+.merge-bar {
+    display: flex;
+    border: 3px solid lime;
+    border-radius: 1.625rem;
+    background-color: #fff;
+    width: 500px;
+}
+
+
+.unlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: White;
+    margin-top: 20px;
+    font-size: xx-large;
+    font-family: 'rounded', sans-serif;
+}
+
+.input {
+    border-radius: 1.5rem;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 1.3rem;
+    border: none;
+    margin-left: 10px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.addButton {
+    border-radius: 50%;
+    padding: 15px;
+    color: #fff;
+    margin-right: 10px;
+    border: none;
+    width: 50px;
+    background-color: #1391FE;
+}
+
+.addButton:focus {
+    border: none;
+}
+
+.addButton:hover {
+    cursor: pointer;
+    color: #111;
+    background-color: #fff;
+    border: 3px solid #1391FE;
+}
+
+.adelButton {
+    border-radius: 1.5rem;
+    border: 2px solid rgb(255, 0, 0);
+    color: red;
+    padding: 10px;
+    font-size: 1.3rem;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.adelButton:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+    line-height: 50px;
+}
+
+.removeButton {
+    font-size: 1.4rem;
+    font-family: 'rounded', sans-serif;
+    color: #fff;
+    background-color: #ff3855;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    padding: 10px;
+    width: 120px;
+    margin-left: 20px;
+}
+
+.removeButton:hover {
+    color: #ff3855;
+    border: 1px solid #ff3855;
+    background-color: #fff;
+
+}
+
+.editButton{
+    font-size: 1.4rem;
+    font-family: 'rounded', sans-serif;
+    color: #fff;
+    background-color: #32df0f;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    padding: 10px;
+    width: 120px;
+    margin-left: 20px;
+}
+
+.editButton:hover{
+    color: #32df0f;
+    border: 1px solid #32df0f;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
